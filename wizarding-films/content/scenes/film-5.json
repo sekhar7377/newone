@@ -1,0 +1,340 @@
+{
+ "path": {
+  "points": [
+   [
+    3.5,
+    4,
+    96
+   ],
+   [
+    3.5,
+    4,
+    40
+   ],
+   [
+    3.5,
+    4.5,
+    -40
+   ],
+   [
+    3.5,
+    5,
+    -92
+   ],
+   [
+    14,
+    6.5,
+    -104
+   ],
+   [
+    24.5,
+    5,
+    -60
+   ],
+   [
+    24.5,
+    5,
+    30
+   ],
+   [
+    24.5,
+    18,
+    82
+   ],
+   [
+    0,
+    24,
+    108
+   ],
+   [
+    -24.5,
+    16,
+    60
+   ],
+   [
+    -24.5,
+    5,
+    0
+   ],
+   [
+    -24.5,
+    5,
+    -60
+   ],
+   [
+    -10,
+    22,
+    -108
+   ],
+   [
+    -3,
+    26,
+    20
+   ],
+   [
+    3.5,
+    12,
+    118
+   ]
+  ],
+  "look": [
+   [
+    3.5,
+    4,
+    0
+   ],
+   [
+    3.5,
+    4,
+    -20
+   ],
+   [
+    3.5,
+    4.5,
+    -100
+   ],
+   [
+    24,
+    5,
+    -100
+   ],
+   [
+    24.5,
+    5,
+    -40
+   ],
+   [
+    24.5,
+    5,
+    40
+   ],
+   [
+    24.5,
+    10,
+    100
+   ],
+   [
+    0,
+    10,
+    80
+   ],
+   [
+    -24.5,
+    8,
+    40
+   ],
+   [
+    -24.5,
+    5,
+    -40
+   ],
+   [
+    -24.5,
+    5,
+    -80
+   ],
+   [
+    -10,
+    5,
+    -100
+   ],
+   [
+    0,
+    10,
+    0
+   ],
+   [
+    3.5,
+    5,
+    80
+   ],
+   [
+    3.5,
+    4,
+    80
+   ]
+  ]
+ },
+ "hotspots": [
+  {
+   "id": "f5-release",
+   "kind": "meta",
+   "title": "July 2007",
+   "body": "The fifth film opened in July 2007, the first of four directed by David Yates, who would guide the series to its end.",
+   "at": 0.02,
+   "offset": [
+    -2.5,
+    2,
+    -10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-orbs",
+   "kind": "bts",
+   "title": "A hall made of light",
+   "body": "The towering shelves of glass spheres were realised largely as digital effects; their sheer number, and the way they shatter in the chase, made physical props impractical.",
+   "at": 0.08,
+   "offset": [
+    -2.5,
+    3,
+    -4
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f5-orb"
+  },
+  {
+   "id": "f5-length",
+   "kind": "fact",
+   "title": "The longest book, a lean film",
+   "body": "Its source is the longest book of the seven, yet at about 138 minutes the film is one of the shortest in the series, built around a few strong set pieces.",
+   "at": 0.15,
+   "offset": [
+    2.5,
+    1.5,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-staunton",
+   "kind": "fact",
+   "title": "A smile to fear",
+   "body": "Imelda Staunton played the new Defence teacher, a figure of pink cardigans, kitten plates and absolute control. The performance made her one of the series' most memorable villains.",
+   "at": 0.22,
+   "offset": [
+    -2.5,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-luna",
+   "kind": "bts",
+   "title": "Found in an open call",
+   "body": "Evanna Lynch won the role of the dreamy Luna Lovegood through an open audition that drew thousands of hopefuls.",
+   "at": 0.3,
+   "offset": [
+    2.5,
+    2,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-ministry",
+   "kind": "bts",
+   "title": "A Ministry underground",
+   "body": "The vast Ministry atrium was built as a set at the studio, its tiled, panelled look drawing on the older stations of the London Underground.",
+   "at": 0.38,
+   "offset": [
+    -2.5,
+    3,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-hooper",
+   "kind": "fact",
+   "title": "A new voice",
+   "body": "Nicholas Hooper composed the score, adding urgent percussion for the secret lessons and a wistful theme for the school year.",
+   "at": 0.46,
+   "offset": [
+    0,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-army",
+   "kind": "moment",
+   "title": "A secret classroom",
+   "body": "Students teach each other to defend themselves in a room that appears only when needed. The film plays it as joyful rebellion before the danger arrives.",
+   "at": 0.55,
+   "offset": [
+    8,
+    2,
+    0
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f5-stag"
+  },
+  {
+   "id": "f5-prophecy",
+   "kind": "moment",
+   "title": "A name on the shelf",
+   "body": "Deep among the rows, one small sphere carries Harry's name. What it holds, and who wants it, drives the film's final act.",
+   "at": 0.7,
+   "offset": [
+    2.5,
+    2,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-veil",
+   "kind": "moment",
+   "title": "Behind the veil",
+   "body": "The confrontation ends beside a stone archway hung with a drifting veil, the series' quietest image of loss.",
+   "at": 0.82,
+   "offset": [
+    -6,
+    6,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f5-fireworks",
+   "kind": "fact",
+   "title": "A loud exit",
+   "body": "The twins' fireworks farewell to the tyrannical teacher was staged as a burst of digital colour that briefly fills the school with light.",
+   "at": 0.94,
+   "offset": [
+    0,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f5-c1",
+   "name": "A fallen sphere",
+   "note": "Uncracked, and humming faintly.",
+   "at": 0.27,
+   "offset": [
+    -2.4,
+    -3.4,
+    0
+   ]
+  },
+  {
+   "id": "f5-c2",
+   "name": "A tiny pink plate",
+   "note": "A kitten on it, glaring.",
+   "at": 0.5,
+   "offset": [
+    2.4,
+    -3,
+    0
+   ]
+  },
+  {
+   "id": "f5-c3",
+   "name": "A forged galleon",
+   "note": "Warm: there must be a meeting tonight.",
+   "at": 0.76,
+   "offset": [
+    2.4,
+    -3,
+    0
+   ]
+  }
+ ]
+}

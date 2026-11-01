@@ -1,0 +1,330 @@
+{
+ "path": {
+  "points": [
+   [
+    0,
+    145,
+    760
+   ],
+   [
+    110,
+    135,
+    480
+   ],
+   [
+    -60,
+    128,
+    220
+   ],
+   [
+    40,
+    124,
+    -80
+   ],
+   [
+    0,
+    112,
+    -420
+   ],
+   [
+    0,
+    96,
+    -660
+   ],
+   [
+    0,
+    86,
+    -790
+   ],
+   [
+    0,
+    83.5,
+    -820
+   ],
+   [
+    0,
+    83.5,
+    -858
+   ],
+   [
+    0,
+    100,
+    -892
+   ],
+   [
+    40,
+    165,
+    -960
+   ],
+   [
+    260,
+    200,
+    -700
+   ],
+   [
+    320,
+    185,
+    -100
+   ],
+   [
+    200,
+    165,
+    480
+   ]
+  ],
+  "look": [
+   [
+    0,
+    120,
+    500
+   ],
+   [
+    0,
+    115,
+    250
+   ],
+   [
+    0,
+    110,
+    0
+   ],
+   [
+    0,
+    100,
+    -300
+   ],
+   [
+    0,
+    90,
+    -700
+   ],
+   [
+    0,
+    85,
+    -830
+   ],
+   [
+    0,
+    84,
+    -860
+   ],
+   [
+    0,
+    84,
+    -900
+   ],
+   [
+    0,
+    90,
+    -930
+   ],
+   [
+    0,
+    120,
+    -960
+   ],
+   [
+    0,
+    110,
+    -960
+   ],
+   [
+    0,
+    90,
+    -500
+   ],
+   [
+    0,
+    100,
+    300
+   ],
+   [
+    0,
+    130,
+    700
+   ]
+  ]
+ },
+ "hotspots": [
+  {
+   "id": "f2-release",
+   "kind": "meta",
+   "title": "November 2002",
+   "body": "The second film followed its predecessor by just a year, released in mid-November 2002 with Chris Columbus directing again and Steve Kloves returning as screenwriter.",
+   "at": 0.03,
+   "offset": [
+    -16,
+    -6,
+    -20
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-car",
+   "kind": "bts",
+   "title": "Cars of a certain age",
+   "body": "The flying car is a small blue British saloon of the early 1960s. Several real examples were used during filming, and some were reportedly wrecked in the sequence with the furious tree.",
+   "at": 0.08,
+   "offset": [
+    14,
+    -2,
+    -10
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f2-car"
+  },
+  {
+   "id": "f2-longest",
+   "kind": "fact",
+   "title": "The longest of the eight",
+   "body": "At around 161 minutes, this is the longest film in the series, even though its book is one of the shorter ones.",
+   "at": 0.15,
+   "offset": [
+    -18,
+    -4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-dobby",
+   "kind": "fact",
+   "title": "A digital co-star",
+   "body": "The anxious house-elf was one of the first major fully computer-generated characters in a live-action family film, animated to share scenes and eye-lines with the young cast.",
+   "at": 0.22,
+   "offset": [
+    16,
+    -8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-lockhart",
+   "kind": "bts",
+   "title": "A celebrity professor",
+   "body": "Kenneth Branagh played the vain, smiling Defence teacher whose fame rests on other people's deeds, giving the film much of its comedy.",
+   "at": 0.3,
+   "offset": [
+    -16,
+    -6,
+    8
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-harris",
+   "kind": "fact",
+   "title": "A farewell",
+   "body": "This was Richard Harris's second and last film as the headmaster. He died in October 2002, a few weeks before its release, and the role was recast for the third film.",
+   "at": 0.38,
+   "offset": [
+    18,
+    -2,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-score",
+   "kind": "fact",
+   "title": "Williams, adapted",
+   "body": "John Williams composed new themes, including a creeping motif for the hidden chamber. With his schedule full, William Ross adapted and conducted much of the score.",
+   "at": 0.46,
+   "offset": [
+    -14,
+    -4,
+    0
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f2-notes"
+  },
+  {
+   "id": "f2-corridor",
+   "kind": "moment",
+   "title": "Words on the wall",
+   "body": "A warning daubed on a corridor wall, water spreading across the flagstones, and a cat frozen stiff: the school year turns from adventure to mystery in a single night.",
+   "at": 0.55,
+   "offset": [
+    0,
+    2.5,
+    -6
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-basilisk",
+   "kind": "bts",
+   "title": "A creature built big",
+   "body": "For close shots of the great serpent, the crew built a large animatronic head; the full creature in motion was finished digitally.",
+   "at": 0.6,
+   "offset": [
+    2.6,
+    2,
+    -4
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-diary",
+   "kind": "moment",
+   "title": "A diary that writes back",
+   "body": "An empty diary answers when you write in it. The film stages the conversation with ink that soaks in and reappears as a reply.",
+   "at": 0.7,
+   "offset": [
+    -20,
+    10,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f2-flight",
+   "kind": "fact",
+   "title": "Over real countryside",
+   "body": "Aerial photography of rural English landscape gave the flight its sense of scale, with the car itself added in compositing.",
+   "at": 0.84,
+   "offset": [
+    18,
+    -10,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f2-c1",
+   "name": "A road atlas",
+   "note": "Useless at this altitude.",
+   "at": 0.2,
+   "offset": [
+    -6,
+    -1,
+    6
+   ]
+  },
+  {
+   "id": "f2-c2",
+   "name": "A sock",
+   "note": "Grey, and a long way from its pair.",
+   "at": 0.58,
+   "offset": [
+    2.5,
+    -2.6,
+    0
+   ]
+  },
+  {
+   "id": "f2-c3",
+   "name": "A spider's thread",
+   "note": "Glinting, and leading somewhere you would rather not go.",
+   "at": 0.9,
+   "offset": [
+    8,
+    -4,
+    0
+   ]
+  }
+ ]
+}

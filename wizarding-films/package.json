@@ -1,0 +1,32 @@
+{
+  "name": "wizarding-films",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An unofficial, original fan tribute to the eight Harry Potter films: an immersive WebGL journey.",
+  "scripts": {
+    "geo": "node scripts/build-geometry.mjs",
+    "illustrations": "node scripts/build-illustrations.mjs",
+    "benchmarks": "node scripts/copy-gpu-benchmarks.mjs",
+    "prebuild": "npm run geo && npm run benchmarks",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "measure": "node scripts/measure.mjs"
+  },
+  "dependencies": {
+    "detect-gpu": "^5.0.70",
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.187.0",
+    "typescript": "^5.7.0"
+  }
+}

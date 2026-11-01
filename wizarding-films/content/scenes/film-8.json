@@ -1,0 +1,290 @@
+{
+ "path": {
+  "points": [
+   [
+    0,
+    22,
+    190
+   ],
+   [
+    0,
+    16,
+    10
+   ],
+   [
+    40,
+    32,
+    -150
+   ],
+   [
+    128,
+    58,
+    -288
+   ],
+   [
+    196,
+    54,
+    -318
+   ],
+   [
+    150,
+    76,
+    -362
+   ],
+   [
+    60,
+    96,
+    -372
+   ],
+   [
+    -40,
+    84,
+    -246
+   ],
+   [
+    -82,
+    52,
+    -150
+   ],
+   [
+    -62,
+    26,
+    50
+   ]
+  ],
+  "look": [
+   [
+    0,
+    40,
+    -100
+   ],
+   [
+    0,
+    50,
+    -250
+   ],
+   [
+    100,
+    50,
+    -300
+   ],
+   [
+    200,
+    50,
+    -300
+   ],
+   [
+    150,
+    50,
+    -300
+   ],
+   [
+    45,
+    80,
+    -325
+   ],
+   [
+    0,
+    70,
+    -280
+   ],
+   [
+    -60,
+    50,
+    -200
+   ],
+   [
+    -30,
+    20,
+    0
+   ],
+   [
+    0,
+    20,
+    150
+   ]
+  ]
+ },
+ "hotspots": [
+  {
+   "id": "f8-release",
+   "kind": "meta",
+   "title": "July 2011",
+   "body": "The final film opened in July 2011, a decade after the first, and in 3D as well as 2D.",
+   "at": 0.02,
+   "offset": [
+    -12,
+    4,
+    -10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-record",
+   "kind": "fact",
+   "title": "The biggest of them all",
+   "body": "It broke the record for the largest worldwide opening weekend at the time and became the highest-grossing film of the series, with well over a billion dollars.",
+   "at": 0.1,
+   "offset": [
+    12,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-bridge",
+   "kind": "moment",
+   "title": "The bridge falls",
+   "body": "The long wooden bridge across the ravine is destroyed in the battle, cutting the castle off from the hillside. Its broken span is the first thing you see at dawn.",
+   "at": 0.28,
+   "offset": [
+    0,
+    10,
+    -14
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f8-bridge"
+  },
+  {
+   "id": "f8-model",
+   "kind": "bts",
+   "title": "Breaking the model",
+   "body": "For the battle, parts of the castle model were built again in a damaged state, with collapsed towers and scorched walls.",
+   "at": 0.38,
+   "offset": [
+    10,
+    8,
+    -10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-gringotts",
+   "kind": "moment",
+   "title": "A dragon's escape",
+   "body": "The break-in at the wizarding bank ends with a half-blind dragon smashing its way up through the roof and carrying the friends away.",
+   "at": 0.48,
+   "offset": [
+    -10,
+    10,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-epilogue",
+   "kind": "bts",
+   "title": "Nineteen years, filmed twice",
+   "body": "The epilogue at King's Cross was filmed on location, then reshot later at the studio with revised make-up for the older characters.",
+   "at": 0.58,
+   "offset": [
+    12,
+    6,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-snape",
+   "kind": "moment",
+   "title": "A memory poured out",
+   "body": "A dying man's memories, seen in a stone basin, reveal a lifetime of hidden loyalty. The film builds it into a montage spanning the whole series.",
+   "at": 0.68,
+   "offset": [
+    -10,
+    6,
+    -6
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f8-doe"
+  },
+  {
+   "id": "f8-forest",
+   "kind": "moment",
+   "title": "Walking into the forest",
+   "body": "Harry walks alone into the dark wood, accompanied by the people he has lost. It is the quietest scene of a very loud film.",
+   "at": 0.78,
+   "offset": [
+    10,
+    6,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-oscars",
+   "kind": "meta",
+   "title": "Three nominations",
+   "body": "It was nominated for Academy Awards for art direction, make-up and visual effects.",
+   "at": 0.86,
+   "offset": [
+    -8,
+    6,
+    8
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-end",
+   "kind": "fact",
+   "title": "Ten years, eight films",
+   "body": "From 2001 to 2011 the same core cast and much of the same crew made eight films at Leavesden Studios, the longest-running film series of its kind.",
+   "at": 0.94,
+   "offset": [
+    8,
+    6,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f8-back-to-school",
+   "kind": "moment",
+   "title": "Back to school",
+   "body": "Every 1 September the story begins again for someone. This note unlocks on the first day of term.",
+   "at": 0.2,
+   "offset": [
+    0,
+    14,
+    0
+   ],
+   "publishAt": "2027-09-01"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f8-c1",
+   "name": "A diadem",
+   "note": "Tarnished, lost among the rubble.",
+   "at": 0.42,
+   "offset": [
+    4,
+    -4,
+    0
+   ]
+  },
+  {
+   "id": "f8-c2",
+   "name": "A cracked wand",
+   "note": "Still faintly warm.",
+   "at": 0.62,
+   "offset": [
+    -3,
+    -4,
+    3
+   ]
+  },
+  {
+   "id": "f8-c3",
+   "name": "A single ember",
+   "note": "It refuses to go out.",
+   "at": 0.84,
+   "offset": [
+    5,
+    -4,
+    0
+   ]
+  }
+ ]
+}

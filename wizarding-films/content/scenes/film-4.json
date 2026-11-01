@@ -1,0 +1,321 @@
+{
+ "path": {
+  "points": [
+   [
+    330,
+    48,
+    392
+   ],
+   [
+    330,
+    16,
+    345
+   ],
+   [
+    330,
+    9,
+    280
+   ],
+   [
+    330,
+    9,
+    200
+   ],
+   [
+    330,
+    12,
+    118
+   ],
+   [
+    230,
+    9,
+    60
+   ],
+   [
+    90,
+    5,
+    40
+   ],
+   [
+    -50,
+    8,
+    30
+   ],
+   [
+    -40,
+    42,
+    -170
+   ],
+   [
+    40,
+    92,
+    -262
+   ],
+   [
+    210,
+    80,
+    -110
+   ],
+   [
+    390,
+    58,
+    90
+   ],
+   [
+    440,
+    38,
+    280
+   ]
+  ],
+  "look": [
+   [
+    330,
+    10,
+    250
+   ],
+   [
+    330,
+    9,
+    250
+   ],
+   [
+    330,
+    9,
+    150
+   ],
+   [
+    330,
+    9,
+    100
+   ],
+   [
+    250,
+    10,
+    60
+   ],
+   [
+    100,
+    4,
+    40
+   ],
+   [
+    -20,
+    6,
+    30
+   ],
+   [
+    -60,
+    30,
+    -120
+   ],
+   [
+    0,
+    70,
+    -300
+   ],
+   [
+    45,
+    90,
+    -320
+   ],
+   [
+    400,
+    40,
+    120
+   ],
+   [
+    430,
+    30,
+    120
+   ],
+   [
+    330,
+    20,
+    300
+   ]
+  ]
+ },
+ "hotspots": [
+  {
+   "id": "f4-release",
+   "kind": "meta",
+   "title": "November 2005",
+   "body": "The fourth film arrived in mid-November 2005, directed by Mike Newell, the first British director of the series.",
+   "at": 0.02,
+   "offset": [
+    10,
+    4,
+    -10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f4-rating",
+   "kind": "fact",
+   "title": "A step darker",
+   "body": "It was the first film in the series to be rated PG-13 in the United States, reflecting the tournament's danger and the darkness of its ending.",
+   "at": 0.07,
+   "offset": [
+    -3,
+    2,
+    -6
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f4-maze",
+   "kind": "moment",
+   "title": "A maze that closes behind you",
+   "body": "The final task is a hedge maze that seems alive: paths seal over, mist rolls between the walls, and the competitors turn on each other as the hedges press in.",
+   "at": 0.15,
+   "offset": [
+    3.5,
+    2,
+    -10
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f4-maze"
+  },
+  {
+   "id": "f4-hedges",
+   "kind": "bts",
+   "title": "Walls on the move",
+   "body": "The maze combined tall physical hedge walls on the stage, some built to move and close in on the actors, with digital extensions for its full size.",
+   "at": 0.22,
+   "offset": [
+    -3.5,
+    3,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f4-tank",
+   "kind": "bts",
+   "title": "Weeks underwater",
+   "body": "For the lake task, Daniel Radcliffe trained to dive and filmed in a large tank at the studio, holding his breath between takes while safety divers waited just out of shot.",
+   "at": 0.34,
+   "offset": [
+    12,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f4-lake",
+   "kind": "moment",
+   "title": "The black lake",
+   "body": "The second task sends champions to the bottom of the lake to recover something precious. The film makes the water murky and full of reaching shapes.",
+   "at": 0.42,
+   "offset": [
+    -10,
+    4,
+    10
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f4-wave"
+  },
+  {
+   "id": "f4-doyle",
+   "kind": "fact",
+   "title": "A new composer",
+   "body": "Patrick Doyle wrote the score, introducing a stately waltz for the winter ball alongside the familiar main theme.",
+   "at": 0.52,
+   "offset": [
+    10,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f4-fiennes",
+   "kind": "fact",
+   "title": "The face of the villain",
+   "body": "Ralph Fiennes appeared as the dark wizard for the first time, fully embodied after three films of shadows, flashbacks and borrowed faces.",
+   "at": 0.62,
+   "offset": [
+    -12,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f4-dragon",
+   "kind": "moment",
+   "title": "Fire in the dark",
+   "body": "The first task pits each champion against a dragon. The film's chase across the castle roofs was invented for the screen.",
+   "at": 0.78,
+   "offset": [
+    10,
+    10,
+    -10
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f4-flame"
+  },
+  {
+   "id": "f4-pattinson",
+   "kind": "fact",
+   "title": "A champion's face",
+   "body": "Robert Pattinson played the well-liked Hufflepuff champion, a role that came a few years before his own rise to fame.",
+   "at": 0.86,
+   "offset": [
+    -10,
+    6,
+    8
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f4-oscar",
+   "kind": "meta",
+   "title": "One nomination",
+   "body": "The film received an Academy Award nomination for art direction, recognising Stuart Craig and Stephenie McMillan's work on the tournament's sets.",
+   "at": 0.94,
+   "offset": [
+    8,
+    6,
+    6
+   ],
+   "publishAt": "2026-01-01"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f4-c1",
+   "name": "A golden egg",
+   "note": "It shrieks when opened. Try it underwater.",
+   "at": 0.18,
+   "offset": [
+    0,
+    -6,
+    0
+   ]
+  },
+  {
+   "id": "f4-c2",
+   "name": "A dragon scale",
+   "note": "Still hot to the touch.",
+   "at": 0.8,
+   "offset": [
+    -6,
+    -6,
+    4
+   ]
+  },
+  {
+   "id": "f4-c3",
+   "name": "A dance card",
+   "note": "Half filled in, in nervous handwriting.",
+   "at": 0.6,
+   "offset": [
+    6,
+    -5,
+    0
+   ]
+  }
+ ]
+}

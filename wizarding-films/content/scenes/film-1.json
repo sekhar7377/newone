@@ -1,0 +1,374 @@
+{
+ "path": {
+  "points": [
+   [
+    30,
+    26,
+    290
+   ],
+   [
+    12,
+    8,
+    222
+   ],
+   [
+    -14,
+    4,
+    130
+   ],
+   [
+    8,
+    4.5,
+    40
+   ],
+   [
+    -6,
+    5,
+    -60
+   ],
+   [
+    0,
+    9,
+    -140
+   ],
+   [
+    -8,
+    24,
+    -185
+   ],
+   [
+    18,
+    64,
+    -218
+   ],
+   [
+    95,
+    88,
+    -270
+   ],
+   [
+    170,
+    62,
+    -200
+   ],
+   [
+    185,
+    26,
+    -40
+   ],
+   [
+    120,
+    15,
+    160
+   ],
+   [
+    70,
+    24,
+    272
+   ]
+  ],
+  "look": [
+   [
+    0,
+    6,
+    200
+   ],
+   [
+    0,
+    4,
+    150
+   ],
+   [
+    0,
+    5,
+    60
+   ],
+   [
+    0,
+    18,
+    -150
+   ],
+   [
+    0,
+    35,
+    -250
+   ],
+   [
+    0,
+    30,
+    -230
+   ],
+   [
+    0,
+    60,
+    -280
+   ],
+   [
+    0,
+    72,
+    -300
+   ],
+   [
+    45,
+    105,
+    -325
+   ],
+   [
+    0,
+    55,
+    -300
+   ],
+   [
+    0,
+    20,
+    0
+   ],
+   [
+    0,
+    8,
+    250
+   ],
+   [
+    20,
+    8,
+    250
+   ]
+  ]
+ },
+ "startT": 0,
+ "hotspots": [
+  {
+   "id": "f1-release",
+   "kind": "meta",
+   "title": "November 2001",
+   "body": "The first film opened in British and American cinemas in mid-November 2001, directed by Chris Columbus from a screenplay by Steve Kloves and produced by David Heyman. American audiences knew it by a different title: Sorcerer's Stone.",
+   "at": 0.03,
+   "offset": [
+    -14,
+    4,
+    -20
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-crossing",
+   "kind": "moment",
+   "title": "The first crossing",
+   "body": "A flotilla of small boats, each with a lantern at the prow, carries the newest students across black water. The castle is held back until the last moment, then revealed all at once, lit window by window. Every later film returns to that silhouette.",
+   "at": 0.1,
+   "offset": [
+    10,
+    3,
+    -10
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f1-boat"
+  },
+  {
+   "id": "f1-trio",
+   "kind": "bts",
+   "title": "Three unknowns",
+   "body": "The three young leads were cast after a long search. Daniel Radcliffe was eleven when he was chosen; Rupert Grint and Emma Watson were also newcomers to film. They grew up on screen over the following decade.",
+   "at": 0.17,
+   "offset": [
+    -12,
+    5,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-score",
+   "kind": "fact",
+   "title": "A theme in a celesta",
+   "body": "John Williams wrote the score. Its twinkling main theme, led by a celesta, became the musical signature of the whole series and was carried through all eight films by the composers who followed him.",
+   "at": 0.24,
+   "offset": [
+    12,
+    6,
+    0
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f1-notes"
+  },
+  {
+   "id": "f1-model",
+   "kind": "bts",
+   "title": "A castle built in miniature",
+   "body": "The castle exteriors were largely a highly detailed scale model, combined with digital work. The same model was rebuilt and extended for each film as the story called for new towers, bridges and courtyards.",
+   "at": 0.32,
+   "offset": [
+    -18,
+    10,
+    -10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-candles",
+   "kind": "bts",
+   "title": "Candles that would not stay up",
+   "body": "The floating candles of the Great Hall are widely reported to have started as real candles hung on wires. The heat kept burning through the wires, so the production moved to digital candles for later shots.",
+   "at": 0.39,
+   "offset": [
+    8,
+    14,
+    -6
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f1-candle"
+  },
+  {
+   "id": "f1-design",
+   "kind": "fact",
+   "title": "Stuart Craig's world",
+   "body": "Production designer Stuart Craig designed all eight films, alongside set decorator Stephenie McMillan. The first film earned them an Academy Award nomination for art direction; it was also nominated for costume design and original score.",
+   "at": 0.47,
+   "offset": [
+    -14,
+    6,
+    8
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-locations",
+   "kind": "bts",
+   "title": "Borrowed corridors",
+   "body": "Real places stood in for parts of the school: Alnwick Castle in Northumberland for exteriors on the grounds, Gloucester Cathedral's cloisters for corridors, and Christ Church in Oxford, whose dining hall inspired the Great Hall set.",
+   "at": 0.55,
+   "offset": [
+    14,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-sorting",
+   "kind": "moment",
+   "title": "A hat with opinions",
+   "body": "New students are sorted into houses by a battered, talking hat. The scene turns a ceremony into a nervous, very private moment in front of the whole school.",
+   "at": 0.62,
+   "offset": [
+    -16,
+    6,
+    -12
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-chess",
+   "kind": "bts",
+   "title": "A life-size game",
+   "body": "The giant chessboard was not only a digital effect: the pieces were built as full-size physical props, which gave the young actors something real to stand among.",
+   "at": 0.71,
+   "offset": [
+    16,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-station",
+   "kind": "fact",
+   "title": "Platforms real and imagined",
+   "body": "King's Cross in London provided the platforms for the departure, while Goathland station in North Yorkshire played the little station where the train arrives.",
+   "at": 0.8,
+   "offset": [
+    -12,
+    5,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-boxoffice",
+   "kind": "fact",
+   "title": "The year's biggest film",
+   "body": "It was the highest-grossing film released worldwide in 2001, taking close to a billion dollars in its original run and passing that mark with later re-releases.",
+   "at": 0.88,
+   "offset": [
+    10,
+    6,
+    6
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-runtime",
+   "kind": "meta",
+   "title": "152 minutes",
+   "body": "The finished film runs about two and a half hours. It set the template for the series: faithful to its book, generous with spectacle, and anchored by the castle.",
+   "at": 0.95,
+   "offset": [
+    -10,
+    5,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f1-anniversary",
+   "kind": "moment",
+   "title": "Twenty-five years on",
+   "body": "A quarter of a century after its release, the first film still opens the door for new viewers. This note unlocks on its anniversary.",
+   "at": 0.5,
+   "offset": [
+    0,
+    18,
+    0
+   ],
+   "publishAt": "2026-11-16"
+  },
+  {
+   "id": "f1-new-owl",
+   "kind": "fact",
+   "title": "Owls on the payroll",
+   "body": "Real owls were trained for the film, and several different birds shared the role of Harry's snowy owl.",
+   "at": 0.76,
+   "offset": [
+    -6,
+    12,
+    -6
+   ],
+   "publishAt": "2026-10-31"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f1-c1",
+   "name": "A paper boat",
+   "note": "Folded from a page of homework and set adrift. Someone was nervous.",
+   "at": 0.13,
+   "offset": [
+    6,
+    -3.4,
+    4
+   ]
+  },
+  {
+   "id": "f1-c2",
+   "name": "A lost lantern",
+   "note": "Still warm. It must have slipped from a prow.",
+   "at": 0.44,
+   "offset": [
+    -9,
+    -2,
+    4
+   ]
+  },
+  {
+   "id": "f1-c3",
+   "name": "A star chart",
+   "note": "Pinned to the parapet and forgotten.",
+   "at": 0.66,
+   "offset": [
+    5,
+    -2,
+    -3
+   ]
+  }
+ ]
+}

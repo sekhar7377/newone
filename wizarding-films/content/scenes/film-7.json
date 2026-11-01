@@ -1,0 +1,299 @@
+{
+ "path": {
+  "points": [
+   [
+    70,
+    36,
+    190
+   ],
+   [
+    22,
+    30,
+    96
+   ],
+   [
+    -50,
+    24,
+    74
+   ],
+   [
+    -82,
+    22,
+    22
+   ],
+   [
+    -24,
+    18,
+    12
+   ],
+   [
+    16,
+    11,
+    10
+   ],
+   [
+    34,
+    18,
+    -48
+   ],
+   [
+    0,
+    34,
+    -180
+   ],
+   [
+    0,
+    44,
+    -350
+   ],
+   [
+    60,
+    118,
+    -430
+   ],
+   [
+    160,
+    82,
+    -290
+   ],
+   [
+    140,
+    44,
+    70
+   ]
+  ],
+  "look": [
+   [
+    0,
+    10,
+    60
+   ],
+   [
+    -30,
+    8,
+    50
+   ],
+   [
+    -90,
+    0,
+    60
+   ],
+   [
+    -60,
+    6,
+    20
+   ],
+   [
+    4,
+    8,
+    -6
+   ],
+   [
+    4,
+    7,
+    -6
+   ],
+   [
+    0,
+    20,
+    -150
+   ],
+   [
+    0,
+    40,
+    -400
+   ],
+   [
+    0,
+    80,
+    -450
+   ],
+   [
+    0,
+    60,
+    -300
+   ],
+   [
+    60,
+    30,
+    0
+   ],
+   [
+    40,
+    15,
+    120
+   ]
+  ]
+ },
+ "hotspots": [
+  {
+   "id": "f7-release",
+   "kind": "meta",
+   "title": "November 2010",
+   "body": "The final book was split into two films. Part 1 opened in November 2010, again directed by David Yates.",
+   "at": 0.02,
+   "offset": [
+    -12,
+    2,
+    -10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f7-desplat",
+   "kind": "fact",
+   "title": "A darker music",
+   "body": "Alexandre Desplat took over as composer for the last two films, with a restless, string-driven score for the journey.",
+   "at": 0.09,
+   "offset": [
+    12,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f7-notes"
+  },
+  {
+   "id": "f7-pond",
+   "kind": "moment",
+   "title": "Ice and a sword",
+   "body": "A silver light leads to a frozen pool in the forest. What lies at the bottom has to be fetched by breaking the ice.",
+   "at": 0.18,
+   "offset": [
+    -10,
+    2,
+    10
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f7-stag"
+  },
+  {
+   "id": "f7-tent",
+   "kind": "moment",
+   "title": "A tent that is bigger inside",
+   "body": "The friends live out of an enchanted tent, roomy and shabby within, small and alone among the trees without.",
+   "at": 0.38,
+   "offset": [
+    -6,
+    2,
+    4
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f7-tent"
+  },
+  {
+   "id": "f7-dance",
+   "kind": "moment",
+   "title": "A dance in the cold",
+   "body": "In the bleakest stretch of the journey, two friends dance to a song on the radio. It is a moment that is not in the book, and one of the most talked-about in the film.",
+   "at": 0.44,
+   "offset": [
+    6,
+    3,
+    -4
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f7-malham",
+   "kind": "bts",
+   "title": "A frozen amphitheatre",
+   "body": "The great curved limestone cliff of Malham Cove in Yorkshire stood in for one of the friends' campsites, its strange top of cracked rock pavement seen in the film.",
+   "at": 0.62,
+   "offset": [
+    8,
+    10,
+    -10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f7-seven",
+   "kind": "bts",
+   "title": "Seven of him",
+   "body": "In the escape from Privet Drive, six friends take on Harry's appearance. Daniel Radcliffe played each of them in turn, shot separately and combined.",
+   "at": 0.7,
+   "offset": [
+    -12,
+    10,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f7-tale",
+   "kind": "fact",
+   "title": "A story in shadow puppets",
+   "body": "The legend of three brothers who cheat death is told as an animated sequence of shadow-puppet figures, directed by Ben Hibon.",
+   "at": 0.78,
+   "offset": [
+    12,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f7-brothers"
+  },
+  {
+   "id": "f7-3d",
+   "kind": "fact",
+   "title": "Plans for 3D, dropped",
+   "body": "The film was planned for a 3D release, but the conversion was abandoned late in the schedule; it opened in 2D only.",
+   "at": 0.86,
+   "offset": [
+    -10,
+    6,
+    8
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f7-oscars",
+   "kind": "meta",
+   "title": "Two nominations",
+   "body": "It was nominated for Academy Awards for art direction and visual effects.",
+   "at": 0.94,
+   "offset": [
+    8,
+    5,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f7-c1",
+   "name": "A portable radio",
+   "note": "Tuned to a station reading out names.",
+   "at": 0.4,
+   "offset": [
+    3,
+    -3,
+    -2
+   ]
+  },
+  {
+   "id": "f7-c2",
+   "name": "A single snowdrop",
+   "note": "Flowering where it should not.",
+   "at": 0.2,
+   "offset": [
+    -6,
+    -4,
+    6
+   ]
+  },
+  {
+   "id": "f7-c3",
+   "name": "A deluminator's spark",
+   "note": "A tiny light that wants to go home.",
+   "at": 0.75,
+   "offset": [
+    2,
+    -5,
+    2
+   ]
+  }
+ ]
+}

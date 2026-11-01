@@ -1,0 +1,320 @@
+{
+ "path": {
+  "points": [
+   [
+    -148,
+    60,
+    -192
+   ],
+   [
+    -165,
+    51,
+    -226
+   ],
+   [
+    -192,
+    60,
+    -262
+   ],
+   [
+    -165,
+    96,
+    -292
+   ],
+   [
+    -95,
+    72,
+    -185
+   ],
+   [
+    0,
+    28,
+    -120
+   ],
+   [
+    130,
+    28,
+    -100
+   ],
+   [
+    205,
+    50,
+    -122
+   ],
+   [
+    238,
+    46,
+    -168
+   ],
+   [
+    185,
+    48,
+    -196
+   ],
+   [
+    110,
+    78,
+    -240
+   ],
+   [
+    0,
+    112,
+    -262
+   ],
+   [
+    -110,
+    78,
+    -232
+   ]
+  ],
+  "look": [
+   [
+    -165,
+    70,
+    -250
+   ],
+   [
+    -165,
+    80,
+    -252
+   ],
+   [
+    -165,
+    82,
+    -255
+   ],
+   [
+    -140,
+    60,
+    -250
+   ],
+   [
+    0,
+    20,
+    -60
+   ],
+   [
+    150,
+    30,
+    -120
+   ],
+   [
+    240,
+    40,
+    -140
+   ],
+   [
+    240,
+    38,
+    -140
+   ],
+   [
+    175,
+    38,
+    -172
+   ],
+   [
+    170,
+    40,
+    -172
+   ],
+   [
+    0,
+    80,
+    -300
+   ],
+   [
+    -120,
+    60,
+    -250
+   ],
+   [
+    -165,
+    60,
+    -230
+   ]
+  ]
+ },
+ "hotspots": [
+  {
+   "id": "f3-release",
+   "kind": "meta",
+   "title": "Summer 2004",
+   "body": "The third film opened in Britain at the end of May 2004 and in America a few days later: the first in the series to arrive in summer rather than before Christmas.",
+   "at": 0.02,
+   "offset": [
+    10,
+    0,
+    -8
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-cuaron",
+   "kind": "fact",
+   "title": "A new eye",
+   "body": "Alfonso Cuarón took over as director and changed the texture of the series: handheld moments, students in their own clothes, and a darker, weather-beaten castle.",
+   "at": 0.07,
+   "offset": [
+    -8,
+    6,
+    -10
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f3-clock"
+  },
+  {
+   "id": "f3-clock",
+   "kind": "bts",
+   "title": "A new tower",
+   "body": "The giant clock tower and its courtyard were added to the castle for this film, with a pendulum swinging through the passage below. Time becomes a theme you can see.",
+   "at": 0.14,
+   "offset": [
+    12,
+    30,
+    -12
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-essays",
+   "kind": "bts",
+   "title": "Homework for the cast",
+   "body": "Cuarón reportedly asked his three young leads to write essays about their characters, and used what they wrote to talk about who those characters were becoming.",
+   "at": 0.22,
+   "offset": [
+    -8,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-gambon",
+   "kind": "fact",
+   "title": "A new headmaster",
+   "body": "Michael Gambon took over the role of the headmaster after Richard Harris's death, playing him for the rest of the series with a lighter, more restless energy.",
+   "at": 0.3,
+   "offset": [
+    10,
+    6,
+    10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-glencoe",
+   "kind": "bts",
+   "title": "Highland weather",
+   "body": "Much of the outdoor feel came from the Scottish Highlands: Glencoe and its surroundings provided the brooding hills that frame the castle grounds in this film and later ones.",
+   "at": 0.38,
+   "offset": [
+    -14,
+    10,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-hut",
+   "kind": "moment",
+   "title": "A hut on the hill",
+   "body": "The gamekeeper's hut was moved to a slope below the castle for this film, so that hill, hut and pumpkin patch sit against the sky. It is where an execution is awaited and a rescue begins.",
+   "at": 0.56,
+   "offset": [
+    -10,
+    8,
+    6
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f3-hut"
+  },
+  {
+   "id": "f3-buckbeak",
+   "kind": "fact",
+   "title": "Half eagle, half horse",
+   "body": "The proud hippogriff was mostly digital, but life-size models were built for the cast to stroke and bow to, and the animators studied real birds for the way the creature carried itself.",
+   "at": 0.63,
+   "offset": [
+    10,
+    6,
+    -6
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-score",
+   "kind": "fact",
+   "title": "Williams' last",
+   "body": "This was John Williams' final score for the series, written with a medieval flavour and recorders. It was nominated for an Academy Award, as were the visual effects.",
+   "at": 0.71,
+   "offset": [
+    -10,
+    10,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-frost",
+   "kind": "moment",
+   "title": "Cold that you can see",
+   "body": "The prison guards drain warmth from the air: windows frost over, water ices, breath turns white. The film makes their arrival a weather event before it is a monster.",
+   "at": 0.83,
+   "offset": [
+    12,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f3-runtime",
+   "kind": "meta",
+   "title": "The shortest book-length film so far",
+   "body": "At about 142 minutes it was the shortest film in the series up to that point, compressing a dense book into a quick, playful puzzle.",
+   "at": 0.93,
+   "offset": [
+    -8,
+    6,
+    -6
+   ],
+   "publishAt": "2026-01-01"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f3-c1",
+   "name": "A chocolate frog box",
+   "note": "Empty. Someone needed cheering up.",
+   "at": 0.11,
+   "offset": [
+    4,
+    -3,
+    2
+   ]
+  },
+  {
+   "id": "f3-c2",
+   "name": "A cracked pocket watch",
+   "note": "Running slightly backwards.",
+   "at": 0.48,
+   "offset": [
+    -8,
+    -6,
+    4
+   ]
+  },
+  {
+   "id": "f3-c3",
+   "name": "A feather",
+   "note": "Too large for any bird you know.",
+   "at": 0.6,
+   "offset": [
+    6,
+    -5,
+    -4
+   ]
+  }
+ ]
+}

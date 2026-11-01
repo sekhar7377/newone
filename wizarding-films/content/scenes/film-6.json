@@ -1,0 +1,287 @@
+{
+ "path": {
+  "points": [
+   [
+    60,
+    42,
+    -150
+   ],
+   [
+    92,
+    72,
+    -250
+   ],
+   [
+    104,
+    100,
+    -330
+   ],
+   [
+    45,
+    118,
+    -392
+   ],
+   [
+    -16,
+    128,
+    -330
+   ],
+   [
+    42,
+    136,
+    -262
+   ],
+   [
+    104,
+    150,
+    -312
+   ],
+   [
+    60,
+    170,
+    -398
+   ],
+   [
+    -22,
+    162,
+    -360
+   ],
+   [
+    -62,
+    122,
+    -250
+   ],
+   [
+    0,
+    72,
+    -160
+   ]
+  ],
+  "look": [
+   [
+    45,
+    80,
+    -325
+   ],
+   [
+    45,
+    100,
+    -325
+   ],
+   [
+    45,
+    110,
+    -325
+   ],
+   [
+    45,
+    120,
+    -325
+   ],
+   [
+    45,
+    125,
+    -325
+   ],
+   [
+    45,
+    130,
+    -325
+   ],
+   [
+    45,
+    140,
+    -325
+   ],
+   [
+    45,
+    145,
+    -325
+   ],
+   [
+    45,
+    140,
+    -325
+   ],
+   [
+    45,
+    100,
+    -325
+   ],
+   [
+    45,
+    70,
+    -300
+   ]
+  ]
+ },
+ "hotspots": [
+  {
+   "id": "f6-release",
+   "kind": "meta",
+   "title": "Summer 2009",
+   "body": "The sixth film was moved from November 2008 to July 2009, giving it a summer release and a longer wait for fans.",
+   "at": 0.02,
+   "offset": [
+    -12,
+    4,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f6-delbonnel",
+   "kind": "fact",
+   "title": "Painted in light",
+   "body": "Cinematographer Bruno Delbonnel gave the film its muted, smoky palette. It became the only film in the series nominated for the Academy Award for cinematography.",
+   "at": 0.1,
+   "offset": [
+    14,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f6-moon"
+  },
+  {
+   "id": "f6-tower",
+   "kind": "moment",
+   "title": "The tallest tower",
+   "body": "The astronomy tower, normally a place for star charts, becomes the stage for the film's defining night under a green-lit storm.",
+   "at": 0.2,
+   "offset": [
+    -10,
+    10,
+    8
+   ],
+   "publishAt": "2026-01-01",
+   "illustration": "f6-tower"
+  },
+  {
+   "id": "f6-broadbent",
+   "kind": "fact",
+   "title": "A collector of people",
+   "body": "Jim Broadbent played the genial potions master who gathers promising students, and holds one memory he would rather nobody saw.",
+   "at": 0.3,
+   "offset": [
+    12,
+    6,
+    -6
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f6-book",
+   "kind": "moment",
+   "title": "Notes in the margin",
+   "body": "A second-hand textbook covered in handwritten corrections turns Harry into a potions prodigy, and slowly into someone who uses spells he does not understand.",
+   "at": 0.4,
+   "offset": [
+    -12,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f6-riddle",
+   "kind": "bts",
+   "title": "A family likeness",
+   "body": "Hero Fiennes-Tiffin, nephew of Ralph Fiennes, played the villain as an eleven-year-old boy in a flashback.",
+   "at": 0.5,
+   "offset": [
+    10,
+    10,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f6-cave",
+   "kind": "moment",
+   "title": "A lake of the dead",
+   "body": "A lonely cave by the sea, a basin that must be emptied, and pale hands in the water: the film's most frightening sequence takes place far from the school.",
+   "at": 0.6,
+   "offset": [
+    -10,
+    6,
+    10
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f6-romance",
+   "kind": "fact",
+   "title": "A lighter heart",
+   "body": "For all its darkness, the film is often very funny: love potions, jealousy and teenage awkwardness fill its middle hour.",
+   "at": 0.7,
+   "offset": [
+    12,
+    8,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f6-quidditch",
+   "kind": "bts",
+   "title": "Trials in the rain",
+   "body": "The film stages its sport mainly as tryouts and a single match, keeping the focus on character rather than spectacle.",
+   "at": 0.8,
+   "offset": [
+    -10,
+    6,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  },
+  {
+   "id": "f6-storm",
+   "kind": "moment",
+   "title": "The mark in the sky",
+   "body": "A sickly glow hangs over the castle at the climax. The staff and students raise their wands in silence afterwards, a farewell the film invents for the screen.",
+   "at": 0.9,
+   "offset": [
+    10,
+    12,
+    0
+   ],
+   "publishAt": "2026-01-01"
+  }
+ ],
+ "collectibles": [
+  {
+   "id": "f6-c1",
+   "name": "A tiny vial of liquid luck",
+   "note": "Golden. Use sparingly.",
+   "at": 0.25,
+   "offset": [
+    3,
+    -3,
+    3
+   ]
+  },
+  {
+   "id": "f6-c2",
+   "name": "A love-potion chocolate",
+   "note": "Best not.",
+   "at": 0.55,
+   "offset": [
+    -4,
+    -3,
+    0
+   ]
+  },
+  {
+   "id": "f6-c3",
+   "name": "A broken locket",
+   "note": "The clasp is engraved, but the inside is empty.",
+   "at": 0.85,
+   "offset": [
+    4,
+    -4,
+    0
+   ]
+  }
+ ]
+}
