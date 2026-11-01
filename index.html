@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madeofnext: brands, products and films for what comes next</title>
+  <meta name="description" content="Madeofnext is a studio that designs brands, digital products and motion for companies building what comes next." />
+  <meta name="theme-color" content="#1B1340" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="is-loading">
+  <a class="skip" href="#work">Skip to work</a>
+
+  <!-- Cinematic chrome -->
+  <div class="letterbox letterbox--top" aria-hidden="true"></div>
+  <div class="letterbox letterbox--bottom" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true">Play case</div>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top" aria-label="Madeofnext, back to top">
+      <span class="logo-mark" aria-hidden="true"></span>madeofnext
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#how">How we work</a></li>
+        <li><a class="nav__cta" href="#contact">Start a project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- 1. HERO: particle wordmark -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <h1 id="hero-title" class="hero__title">made of next</h1>
+      <div class="hero__foot">
+        <p class="hero__lede">We design brands, products and films for companies building what comes next.</p>
+        <p class="hero__scroll" aria-hidden="true"><span></span>Scroll to roll the reel</p>
+      </div>
+    </section>
+
+    <!-- 2. MANIFESTO: words light up as you scroll -->
+    <section class="manifesto" id="studio" aria-label="About the studio">
+      <p class="manifesto__text" data-split>
+        Every product starts as a rumour. A sketch, a pitch deck, a hunch that
+        the world is about to change shape. We turn that rumour into something
+        people can hold, use and fall for: a name, a system, an interface, a
+        film. Small team. Senior hands. No hand-offs into the dark.
+      </p>
+    </section>
+
+    <!-- 3. WORK: pinned horizontal reel -->
+    <section class="reel" id="work" aria-labelledby="work-title">
+      <div class="reel__head">
+        <h2 id="work-title" class="reel__title">Selected work</h2>
+        <p class="reel__count" aria-live="polite"><span class="reel__current">1</span> of <span class="reel__total">5</span></p>
+      </div>
+      <div class="reel__viewport">
+        <ol class="reel__track">
+          <!-- Projects are rendered from PROJECTS in main.js -->
+        </ol>
+      </div>
+      <div class="reel__progress" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- 4. CAPABILITIES -->
+    <section class="caps" aria-labelledby="caps-title">
+      <h2 id="caps-title" class="caps__title">What we make</h2>
+      <ul class="caps__list">
+        <li class="cap">
+          <button class="cap__name" aria-expanded="false">Brand identity</button>
+          <div class="cap__body"><p>Names, strategy, visual systems and voice. Built to stretch from a pitch deck to a billboard without losing its shape.</p></div>
+        </li>
+        <li class="cap">
+          <button class="cap__name" aria-expanded="false">Digital product</button>
+          <div class="cap__body"><p>Web and mobile apps designed and engineered together. Research, interface design, design systems and front-end code.</p></div>
+        </li>
+        <li class="cap">
+          <button class="cap__name" aria-expanded="false">Motion &amp; film</button>
+          <div class="cap__body"><p>Launch films, product animation and motion systems, from storyboard to final grade.</p></div>
+        </li>
+        <li class="cap">
+          <button class="cap__name" aria-expanded="false">Launch websites</button>
+          <div class="cap__body"><p>Cinematic sites like this one: fast, accessible, and handed over with a CMS your team can actually use.</p></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5. PROCESS: a real sequence, so numbering is earned -->
+    <section class="how" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="how__title">How a project runs</h2>
+      <ol class="how__steps">
+        <li><h3>Rumour</h3><p>Two weeks of workshops and research. We leave with one sentence everyone agrees on.</p><span class="how__time">Weeks 1–2</span></li>
+        <li><h3>Shape</h3><p>Concepts, prototypes and motion tests. You see real directions, not mood boards.</p><span class="how__time">Weeks 3–6</span></li>
+        <li><h3>Make</h3><p>Design and build in parallel, with a working version every Friday.</p><span class="how__time">Weeks 7–12</span></li>
+        <li><h3>Launch</h3><p>We ship with you, then stay on for the first month of real-world tuning.</p><span class="how__time">Week 13 onward</span></li>
+      </ol>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="contact__title">Tell us what's next.</h2>
+      <a class="contact__mail" href="mailto:hello@madeofnext.com">hello@madeofnext.com</a>
+      <p class="contact__note">We reply within two working days, and take on four new projects a quarter.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span data-year>2026</span> Madeofnext</p>
+    <ul>
+      <li><a href="#" rel="noopener">Instagram</a></li>
+      <li><a href="#" rel="noopener">LinkedIn</a></li>
+      <li><a href="#" rel="noopener">Vimeo</a></li>
+    </ul>
+  </footer>
+
+  <!-- Case study overlay -->
+  <div class="case" role="dialog" aria-modal="true" aria-labelledby="case-title" hidden>
+    <div class="case__still" aria-hidden="true"></div>
+    <div class="case__inner">
+      <button class="case__close" aria-label="Close case study">Close</button>
+      <p class="case__meta"></p>
+      <h2 id="case-title" class="case__title"></h2>
+      <p class="case__summary"></p>
+      <dl class="case__facts"></dl>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
