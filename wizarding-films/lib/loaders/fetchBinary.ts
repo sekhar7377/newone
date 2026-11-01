@@ -6,7 +6,7 @@
  * Browsers without DecompressionStream fetch the uncompressed twin.
  */
 const cache = new Map<string, Promise<ArrayBuffer>>();
-export const GEO_BASE = '/geo/';
+export const GEO_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ? process.env.NEXT_PUBLIC_ASSET_BASE + 'geo/' : '/geo/';
 const VERSION = process.env.NEXT_PUBLIC_GEO_VERSION ?? 'dev';
 export const stats = { bytes: 0, files: 0 };
 
@@ -23,9 +23,11 @@ export function fetchBinary(path: string, signal?: AbortSignal): Promise<ArrayBu
 
 async function load(url: string, signal?: AbortSignal): Promise<ArrayBuffer> {
   if (typeof DecompressionStream !== 'undefined') {
-    const res = await fetch(`${url}.gz?v=${VERSION}`, { signal });
+    const res = await fetch(`${url}${process.env.NEXT_PUBLIC_GZ_SUFFIX ?? '.gz'}?v=${VERSION}`, { signal });
     if (res.ok) {
-      const buf = await res.arrayBuffer();
+      let buf = await res.arrayBuffer();
+      // Some static hosts only serve text types: the preview build ships base64 text.
+      if (process.env.NEXT_PUBLIC_GZ_SUFFIX?.endsWith('.txt')) buf = Uint8Array.from(atob(new TextDecoder().decode(buf).trim()), (c) => c.charCodeAt(0)).buffer;
       stats.bytes += buf.byteLength; stats.files++;
       const b = new Uint8Array(buf, 0, 2);
       if (b[0] !== 0x1f || b[1] !== 0x8b) return buf;

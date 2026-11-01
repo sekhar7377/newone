@@ -17,7 +17,7 @@ export async function detectQuality(): Promise<Quality> {
   try {
     const { getGPUTier } = await import('detect-gpu');
     const res = await Promise.race([
-      getGPUTier({ benchmarksURL: '/benchmarks' }),
+      getGPUTier({ benchmarksURL: (process.env.NEXT_PUBLIC_ASSET_BASE ?? '/') + 'benchmarks' }),
       new Promise<null>((r) => setTimeout(() => r(null), 1800)),
     ]);
     if (res) {

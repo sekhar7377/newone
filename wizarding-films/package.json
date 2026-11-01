@@ -27,6 +27,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@types/three": "^0.187.0",
+    "esbuild": "^0.25.12",
     "typescript": "^5.7.0"
   }
 }

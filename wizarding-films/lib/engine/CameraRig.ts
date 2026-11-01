@@ -43,7 +43,7 @@ export class CameraRig {
   private moved = false;
 
   // hub
-  hubPos = new Vector3(0, 330, 340); hubLook = new Vector3(0, 0, -110);
+  hubPos = new Vector3(0, 360, 360); hubLook = new Vector3(0, 0, -100);
   // cinematic
   private cine: { curve: CatmullRomCurve3; look: CatmullRomCurve3; dur: number; t: number; done: () => void } | null = null;
 

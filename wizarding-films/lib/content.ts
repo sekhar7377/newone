@@ -55,8 +55,21 @@ export function isNewSince(item: { publishAt: string }, lastVisit: number) {
 export async function loadSceneContent(id: SceneId): Promise<{ content: SceneContent; illustrations: IllustrationData[] }> {
   // Dynamic imports keep each film's copy out of the initial bundle.
   const [c, i] = await Promise.all([
-    import(`@/content/scenes/${id}.json`).then((m) => m.default as SceneContent),
-    import(`@/content/illustrations/${id}.json`).then((m) => m.default as IllustrationData[]).catch(() => [] as IllustrationData[]),
+    SCENE_JSON[id]().then((m) => m.default as unknown as SceneContent),
+    ILL_JSON[id]().then((m) => m.default as unknown as IllustrationData[]).catch(() => [] as IllustrationData[]),
   ]);
   return { content: c, illustrations: i };
 }
+
+// Explicit loaders (one chunk each) so any bundler can split them.
+type J = () => Promise<{ default: unknown }>;
+const SCENE_JSON: Record<SceneId, J> = {
+  hub: () => import('@/content/scenes/hub.json'), 'film-1': () => import('@/content/scenes/film-1.json'), 'film-2': () => import('@/content/scenes/film-2.json'),
+  'film-3': () => import('@/content/scenes/film-3.json'), 'film-4': () => import('@/content/scenes/film-4.json'), 'film-5': () => import('@/content/scenes/film-5.json'),
+  'film-6': () => import('@/content/scenes/film-6.json'), 'film-7': () => import('@/content/scenes/film-7.json'), 'film-8': () => import('@/content/scenes/film-8.json'),
+};
+const ILL_JSON: Record<SceneId, J> = {
+  hub: () => import('@/content/illustrations/hub.json'), 'film-1': () => import('@/content/illustrations/film-1.json'), 'film-2': () => import('@/content/illustrations/film-2.json'),
+  'film-3': () => import('@/content/illustrations/film-3.json'), 'film-4': () => import('@/content/illustrations/film-4.json'), 'film-5': () => import('@/content/illustrations/film-5.json'),
+  'film-6': () => import('@/content/illustrations/film-6.json'), 'film-7': () => import('@/content/illustrations/film-7.json'), 'film-8': () => import('@/content/illustrations/film-8.json'),
+};
