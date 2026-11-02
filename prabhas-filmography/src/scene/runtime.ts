@@ -18,6 +18,7 @@ export const DEFAULT_SETTINGS = {
   glow: 0.6,
   filamentBrightness: 1,
   hairSpread: 1,
+  streamSpeed: 1,
   grain: reducedMotion ? 0 : 1,
 };
 export type Settings = typeof DEFAULT_SETTINGS;

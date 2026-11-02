@@ -14,8 +14,8 @@ import { pointsGeometry, ribbonGeometry, StrandSim } from './sim';
 import { pointsMaterial, ribbonMaterial } from './shaders';
 
 export const QUALITY = {
-  low: { hairs: 5, segments: 64, dpr: [1, 1.25] as [number, number] },
-  medium: { hairs: 10, segments: 96, dpr: [1, 1.6] as [number, number] },
+  low: { hairs: 8, segments: 64, dpr: [1, 1.25] as [number, number] },
+  medium: { hairs: 16, segments: 96, dpr: [1, 1.6] as [number, number] },
 };
 export type Quality = keyof typeof QUALITY;
 
@@ -119,6 +119,7 @@ function Strands({ quality }: { quality: Quality }) {
       m.uniforms.uHairSpread.value = settings.hairSpread;
       m.uniforms.uPixelScale.value = pixelScale;
       m.uniforms.uBrightness.value = settings.filamentBrightness;
+      m.uniforms.uStream.value = settings.streamSpeed;
     }
     ribbonMat.uniforms.uRipple.value = ripple;
     const controls = state.controls as unknown as OrbitControls | null;

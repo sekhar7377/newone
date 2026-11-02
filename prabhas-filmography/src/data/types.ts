@@ -15,6 +15,17 @@ export type DateCertainty = 'exact' | 'year' | 'announced' | 'tba';
 
 export type EraId = 'beginnings' | 'ascent' | 'baahubali' | 'spectacle' | 'recent' | 'upcoming';
 
+export interface LookImage {
+  /** Path under public/, e.g. "looks/baahubali-the-beginning.jpg", or an https URL. */
+  src: string;
+  alt: string;
+  /** What the photo shows and where it was taken. */
+  caption: string;
+  credit: string;
+  licence: string;
+  sourceUrl: string;
+}
+
 export interface Source {
   label: string;
   url: string;
@@ -50,6 +61,12 @@ export interface Film {
   /** For a recut: the id of the film it is cut from. Drawn as a branch. */
   parentId: string | null;
   poster: string | null;
+  /**
+   * A still of Prabhas's look in this film. Only images you have the right to use:
+   * your own, licensed, or freely licensed (e.g. CC BY-SA on Wikimedia Commons).
+   * Null until such an image is supplied; the UI then shows the typographic card.
+   */
+  look: LookImage | null;
   backdrop: string | null;
   trailerUrl: string | null;
   sources: Source[];

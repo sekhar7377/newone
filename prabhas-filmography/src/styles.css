@@ -206,3 +206,26 @@ input[type='range']::-moz-range-thumb { width: 11px; height: 11px; border: none;
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- photos tied to films ---------- */
+.tlabel-look {
+  position: absolute; left: -18px; top: -18px; width: 36px; height: 36px; border-radius: 50%; object-fit: cover;
+  border: 1px solid rgba(255, 200, 130, 0.7); box-shadow: 0 0 14px rgba(255, 143, 31, 0.55), 0 0 2px #000;
+  filter: saturate(0.85) contrast(1.05); transition: transform 0.25s, box-shadow 0.25s;
+}
+.tlabel.has-look > div { left: 26px; }
+.tlabel.has-look.left > div { left: auto; right: 26px; }
+.tlabel.hov .tlabel-look, .tlabel.sel .tlabel-look { transform: scale(1.7); box-shadow: 0 0 22px rgba(255, 160, 60, 0.85), 0 0 2px #000; }
+.look { margin: 12px 0 0; }
+.look img {
+  display: block; width: 100%; max-height: 260px; object-fit: cover; object-position: center 25%;
+  border-radius: 10px; border: 1px solid var(--line); background: #0b0e16;
+}
+.look figcaption { margin-top: 6px; font-size: 10px; line-height: 1.5; color: var(--ink-dim); display: grid; gap: 2px; }
+.look figcaption span { font-size: 9px; opacity: 0.85; }
+@media (max-width: 700px) {
+  .tlabel-look { width: 28px; height: 28px; left: -14px; top: -14px; }
+  .tlabel.has-look > div { left: 20px; }
+  .tlabel.has-look.left > div { right: 20px; }
+}
+.detail h2:focus, .detail h2:focus-visible { outline: none; }

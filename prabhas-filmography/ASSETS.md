@@ -6,12 +6,26 @@ Verified 2 November 2026.
 
 | Asset | Source | Licence / status |
 |---|---|---|
+| Photos of Prabhas tied to films (`public/looks/`, `src/data/looks.ts`) | Wikimedia Commons, resized to ≤520 px | See the table below. Each is shown with its credit and licence link. |
 | Film posters, backdrops, stills | **None bundled** | No artwork found with a clear licence for reuse. `poster`/`backdrop` are `null`; the detail view renders a typographic title card instead. To add one, put a permitted file in `public/posters/`, set `poster: 'posters/<file>'` on the film, and add a row here. A broken image falls back to the title card. |
 | Trailers | **None linked** | `trailerUrl` is `null` for every film because no official channel URL was verified. |
 | Strands, nucleus, dust, film grain | Generated in code (`src/scene/`) | Original |
 | Favicon | Inline SVG in `index.html` | Original |
 | Fonts: Cinzel, Instrument Serif, JetBrains Mono | Google Fonts | SIL Open Font License 1.1 |
 | Audio | None | The site has no sound |
+
+## Photos (Wikimedia Commons)
+
+These are real photographs from promotions, launches and one film set. They are not frames from the films. Credit and licence appear under each image in the detail panel.
+
+| Film | File | Author | Licence |
+|---|---|---|---|
+| Ek Niranjan | [Prabhas 2009.jpg](https://commons.wikimedia.org/wiki/File:Prabhas_2009.jpg): audio launch, 25 Sep 2009 | Dammiadejonwo | Public domain |
+| Baahubali 2: The Conclusion | [Prabhas and Sathyaraj filming Bahubali the Conclusion.jpg](https://commons.wikimedia.org/wiki/File:Prabhas_and_Sathyaraj_filming_Bahubali_the_Conclusion.jpg): on set, in costume | Bollywood Hungama | CC BY 3.0 |
+| Saaho | [Prabhas at Saaho Pre release event (cropped).jpg](https://commons.wikimedia.org/wiki/File:Prabhas_at_Saaho_Pre_release_event_(cropped).jpg) | Bollywood Hungama | CC BY 3.0 |
+| Kalki 2898 AD | [Prabhas by Gage Skidmore.jpg](https://commons.wikimedia.org/wiki/File:Prabhas_by_Gage_Skidmore.jpg): San Diego Comic-Con, 20 Jul 2023 | Gage Skidmore | CC BY-SA 3.0 |
+
+Changes: resized and re-compressed; shown cropped to a circle at strand tips. [Prabhas promoting Baahubali in June 2015 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Prabhas_promoting_Baahubali_in_June_2015_(cropped).jpg) (CC BY 3.0) suits *Baahubali: The Beginning* but could not be downloaded (Wikimedia rate limit). No other films have a freely licensed photo tied to them on Commons. Add more by editing `src/data/looks.ts`.
 
 ## Data sources
 

@@ -44,6 +44,7 @@ const SPLINE = /* glsl */ `
   uniform float uTime;
   uniform float uIntro;
   uniform float uHairSpread;
+  uniform float uStream;
 
   vec4 info(int col, int row) { return texelFetch(uInfo, ivec2(col, row), 0); }
 
@@ -158,7 +159,9 @@ const POINTS_VS = /* glsl */ `
     float kind = aMeta.w, u, alpha = 1.0;
     float g = growth(row);
     if (aMeta.y < 0.0) {
-      u = fract(-aMeta.y + uTime * 0.018 * i0.w);
+      // hair beads stream a little faster and vary per hair
+      float spd = kind > 0.5 ? mix(0.022, 0.04, aHair.w) : 0.018;
+      u = fract(-aMeta.y + uTime * spd * i0.w * uStream);
       alpha = smoothstep(0.05, 0.2, u) * (1.0 - smoothstep(0.75, 0.98, u)) * 0.8 * min(1.0, i1.x);
       alpha *= smoothstep(u, u + 0.05, g);
     } else {
@@ -198,6 +201,7 @@ function common(points: THREE.Texture, infoTex: THREE.Texture) {
     uHairSpread: { value: 1 },
     uPixelScale: { value: 0.001 },
     uBrightness: { value: 1 },
+    uStream: { value: 1 },
   };
 }
 

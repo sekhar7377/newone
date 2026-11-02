@@ -30,6 +30,18 @@ export class Labels {
       const el = document.createElement('div');
       el.className = 'tlabel';
       const box = document.createElement('div');
+      if (f.look) {
+        const img = document.createElement('img');
+        img.className = 'tlabel-look';
+        img.width = 36;
+        img.height = 36;
+        img.src = f.look.src;
+        img.alt = '';
+        img.decoding = 'async';
+        img.onerror = () => img.remove();
+        el.append(img); // centred on the strand tip
+
+      }
       const t = document.createElement('span');
       t.className = 'tlabel-ti';
       t.textContent = f.title;
@@ -81,7 +93,7 @@ export class Labels {
         it.el.style.visibility = o > 0.02 ? 'visible' : 'hidden';
         it.opacity = o;
       }
-      const cls = `tlabel${isSel ? ' sel' : ''}${isHov ? ' hov' : ''}`;
+      const cls = `tlabel${it.spec.film.look ? ' has-look' : ''}${isSel ? ' sel' : ''}${isHov ? ' hov' : ''}`;
       if (o <= 0.02) {
         this.screen[i * 2] = NaN;
         continue;

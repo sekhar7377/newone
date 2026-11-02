@@ -21,6 +21,27 @@ function TitleCard({ film }: { film: Film }) {
   );
 }
 
+function LookFigure({ film }: { film: Film }) {
+  const [broken, setBroken] = useState(false);
+  useEffect(() => setBroken(false), [film.id]);
+  const look = film.look;
+  if (!look || broken) return <TitleCard film={film} />;
+  return (
+    <figure className="look">
+      <img src={look.src} alt={look.alt} onError={() => setBroken(true)} />
+      <figcaption>
+        {look.caption}
+        <span>
+          Photo: {look.credit} ·{' '}
+          <a href={look.sourceUrl} target="_blank" rel="noreferrer">
+            {look.licence} ↗
+          </a>
+        </span>
+      </figcaption>
+    </figure>
+  );
+}
+
 export function DetailPanel({ film }: { film: Film }) {
   const heading = useRef<HTMLHeadingElement>(null);
   const [copied, setCopied] = useState(false);
@@ -65,7 +86,7 @@ export function DetailPanel({ film }: { film: Film }) {
           Close
         </button>
       </header>
-      <TitleCard film={film} />
+      <LookFigure film={film} />
       <h2 id="detail-title" ref={heading} tabIndex={-1}>
         {film.title}
       </h2>

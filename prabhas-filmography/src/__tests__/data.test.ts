@@ -120,3 +120,16 @@ describe('layout', () => {
     expect(specs[epic.parent].film.id).toBe('baahubali-2');
   });
 });
+
+describe('film photos', () => {
+  it('every photo belongs to a real film, carries credit and licence, and its file exists', async () => {
+    const { LOOKS } = await import('../data/looks');
+    const fs = await import('node:fs');
+    for (const [id, look] of Object.entries(LOOKS)) {
+      expect(FILMS.some((f) => f.id === id), id).toBe(true);
+      expect(look!.credit && look!.licence && look!.caption).toBeTruthy();
+      expect(look!.sourceUrl).toMatch(/^https:\/\/commons\.wikimedia\.org\//);
+      expect(fs.existsSync(`public/${look!.src}`), look!.src).toBe(true);
+    }
+  });
+});

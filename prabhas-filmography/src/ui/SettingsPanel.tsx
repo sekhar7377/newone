@@ -14,7 +14,10 @@ const GROUPS: { title: string; items: { key: keyof Settings; label: string; min:
   },
   {
     title: 'Motion',
-    items: [{ key: 'motionAmount', label: 'Drift', min: 0, max: 2.5, step: 0.05 }],
+    items: [
+      { key: 'motionAmount', label: 'Drift', min: 0, max: 2.5, step: 0.05 },
+      { key: 'streamSpeed', label: 'Streams', min: 0, max: 4, step: 0.05 },
+    ],
   },
   {
     title: 'Light',

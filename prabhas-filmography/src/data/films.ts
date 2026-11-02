@@ -1,4 +1,5 @@
 import type { Film, Source } from './types';
+import { LOOKS } from './looks';
 
 /**
  * Prabhas filmography: the single source of truth for the site.
@@ -25,7 +26,7 @@ const wiki = (page: string, label?: string): Source => ({
   url: `https://en.wikipedia.org/wiki/${page}`,
 });
 
-type Draft = Omit<Film, 'poster' | 'backdrop' | 'trailerUrl' | 'lastVerified' | 'parentId'> &
+type Draft = Omit<Film, 'look' | 'poster' | 'backdrop' | 'trailerUrl' | 'lastVerified' | 'parentId'> &
   Partial<Pick<Film, 'parentId'>>;
 
 const drafts: Draft[] = [
@@ -740,6 +741,7 @@ const drafts: Draft[] = [
 export const FILMS: Film[] = drafts.map((d) => ({
   parentId: null,
   poster: null,
+  look: LOOKS[d.id] ?? null,
   backdrop: null,
   trailerUrl: null,
   lastVerified: LAST_VERIFIED,

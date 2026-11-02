@@ -171,7 +171,7 @@ export function ribbonGeometry(specs: StrandSpec[], hairs: number, segments: num
 }
 
 /** Tip dots for every fibre plus a few beads that travel outward. */
-export function pointsGeometry(specs: StrandSpec[], hairs: number, beads = 2) {
+export function pointsGeometry(specs: StrandSpec[], hairs: number, beads = 4) {
   const meta: number[] = [];
   const hair: number[] = [];
   for (const s of specs) {
@@ -181,10 +181,16 @@ export function pointsGeometry(specs: StrandSpec[], hairs: number, beads = 2) {
       meta.push(s.index, 1, f === 0 ? 0.034 : 0.018, f === 0 ? 0 : 1);
       hair.push(...(f === 0 ? [0, 0, 0, 1] : hairOffset(r)));
     }
+    // streams of light: beads on the main fibre plus beads riding the outer hairs
     const rb = rng(s.seed ^ 0x51ed27);
     for (let b = 0; b < beads; b++) {
-      meta.push(s.index, -(rb() * 0.999 + 5e-4), 0.022, 0);
+      meta.push(s.index, -(rb() * 0.999 + 5e-4), 0.024, 0);
       hair.push(0, 0, 0, 1);
+    }
+    const hairBeads = s.parent >= 0 ? Math.ceil(hairs / 2) : hairs;
+    for (let b = 0; b < hairBeads; b++) {
+      meta.push(s.index, -(rb() * 0.999 + 5e-4), 0.014, 1);
+      hair.push(...hairOffset(rb));
     }
   }
   const g = new THREE.BufferGeometry();
