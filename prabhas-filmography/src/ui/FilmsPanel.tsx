@@ -115,7 +115,9 @@ export function FilmsPanel({ onClose }: { onClose: () => void }) {
                   >
                     <span className="yr">{yearToken(f)}</span>
                     <span className="ti">{f.title}</span>
-                    <span className={`st st-${f.status !== 'released' ? f.status : f.creditType}`}>{statusToken(f)}</span>
+                    {statusToken(f) !== 'Released' && (
+                      <span className={`st st-${f.status !== 'released' ? f.status : f.creditType}`}>{statusToken(f)}</span>
+                    )}
                   </button>
                 </li>
               ))}

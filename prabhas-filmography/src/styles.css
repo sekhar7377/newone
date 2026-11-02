@@ -178,7 +178,7 @@ input[type='range']::-moz-range-thumb { width: 11px; height: 11px; border: none;
   text-shadow: 0 0 6px rgba(5, 7, 12, 0.95), 0 0 2px rgba(5, 7, 12, 0.95);
 }
 .tlabel.left > div { left: auto; right: 8px; text-align: right; }
-.tlabel-ti { color: rgba(244, 233, 212, 0.86); font-size: 10px; max-width: 34ch; overflow: hidden; text-overflow: ellipsis; }
+.tlabel-ti { color: rgba(244, 233, 212, 0.86); font-size: 10px; }
 .tlabel-me { color: var(--ink-dim); max-width: 34ch; overflow: hidden; text-overflow: ellipsis; }
 .tlabel-st { color: rgba(227, 176, 98, 0.6); font-size: 8px; letter-spacing: 0.16em; margin-top: 1px; }
 .tlabel.hov .tlabel-ti, .tlabel.sel .tlabel-ti { color: #fff; }
@@ -194,7 +194,7 @@ input[type='range']::-moz-range-thumb { width: 11px; height: 11px; border: none;
   .panel, .panel.detail { inset: auto 12px 66px 12px; width: auto; max-height: 64vh; top: auto; }
   .panel.detail { z-index: 2; }
   .tlabel > div { font-size: 8px; }
-  .tlabel-ti { font-size: 8.5px; max-width: 22ch; }
+  .tlabel-ti { font-size: 8.5px; }
   .tlabel-me { display: none; }
   .error { left: 16px; right: 16px; top: 90px; }
 }
@@ -229,3 +229,8 @@ input[type='range']::-moz-range-thumb { width: 11px; height: 11px; border: none;
   .tlabel.has-look.left > div { right: 20px; }
 }
 .detail h2:focus, .detail h2:focus-visible { outline: none; }
+
+.tlabel-yr { color: var(--gold); opacity: 0.85; font-size: 0.9em; letter-spacing: 0.1em; margin-left: 0.35em; }
+.tlabel.sel .tlabel-yr { opacity: 1; }
+.stage canvas { cursor: grab; }
+.stage canvas:active { cursor: grabbing; }

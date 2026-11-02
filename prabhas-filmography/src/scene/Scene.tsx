@@ -295,7 +295,7 @@ function CameraRig() {
     const c = new OrbitControls(camera, gl.domElement);
     c.enableDamping = true;
     c.dampingFactor = 0.06;
-    c.rotateSpeed = 0.55;
+    c.rotateSpeed = 1.6; // hold and drag: full 360° around the nucleus
     c.enablePan = false;
     c.enableZoom = false; // smooth zoom handled below
     c.minDistance = MIN_DIST;
@@ -311,6 +311,7 @@ function CameraRig() {
   useEffect(() => {
     controls.connect(); // re-attach after a StrictMode remount
     set({ controls: controls as never });
+    (window as unknown as { __view?: unknown }).__view = { camera, controls }; // used by the browser checks
     camera.position.copy(homePosition(size.width / size.height));
     camera.lookAt(0, 0, 0);
     const stop = () => (anim.current = null);
@@ -333,7 +334,7 @@ function CameraRig() {
     const onWheel = (e: WheelEvent) => {
       e.preventDefault();
       const dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaMode === 2 ? e.deltaY * 400 : e.deltaY;
-      zoom((zoomTo.current ?? dist()) * Math.exp(THREE.MathUtils.clamp(dy, -240, 240) * 0.0011));
+      zoom((zoomTo.current ?? dist()) * Math.exp(THREE.MathUtils.clamp(dy, -240, 240) * 0.0013));
     };
     const touches = new Map<number, { x: number; y: number }>();
     let startGap = 0;

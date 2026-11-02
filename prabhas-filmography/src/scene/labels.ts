@@ -45,13 +45,25 @@ export class Labels {
       const t = document.createElement('span');
       t.className = 'tlabel-ti';
       t.textContent = f.title;
-      const m = document.createElement('span');
-      m.className = 'tlabel-me';
-      m.textContent = [yearToken(f), f.director].filter(Boolean).join(' · ');
-      const st = document.createElement('span');
-      st.className = `tlabel-st st-${f.status !== 'released' ? f.status : f.creditType}`;
-      st.textContent = statusToken(f);
-      box.append(t, m, st);
+      const yr = document.createElement('span');
+      yr.className = 'tlabel-yr';
+      yr.textContent = yearToken(f);
+      t.append(' ', yr); // year sits right beside the title
+      box.append(t);
+      if (f.director) {
+        const m = document.createElement('span');
+        m.className = 'tlabel-me';
+        m.textContent = f.director;
+        box.append(m);
+      }
+      // Released lead films need no status line; others say Filming, Cameo, Voice credit…
+      const token = statusToken(f);
+      if (token !== 'Released') {
+        const st = document.createElement('span');
+        st.className = `tlabel-st st-${f.status !== 'released' ? f.status : f.creditType}`;
+        st.textContent = token;
+        box.append(st);
+      }
       el.append(box);
       el.style.opacity = '0';
       el.style.visibility = 'hidden';

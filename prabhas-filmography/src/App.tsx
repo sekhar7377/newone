@@ -155,7 +155,7 @@ export function App() {
         )}
 
         <p className="hint">
-          Drag to orbit · Scroll or pinch to zoom · Drift the cursor through the strands · Click a strand to open a film · Touch the nucleus
+          Scroll up to zoom in, down to zoom out · Hold and drag to rotate 360° · Click a strand to open a film · Touch the nucleus
         </p>
 
         <div className="actions">
