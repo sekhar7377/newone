@@ -105,6 +105,10 @@ export function App() {
           fx.hoverIndex = -1;
         }}
         onPointerDown={(e) => {
+          if (e.pointerType === 'touch' && !e.isPrimary) {
+            pointer.dragDist = 999; // second finger: this is a pinch, not a tap
+            return;
+          }
           pointer.down = true;
           pointer.dragDist = 0;
           downAt.current = { x: e.clientX, y: e.clientY };
@@ -155,8 +159,14 @@ export function App() {
         )}
 
         <p className="hint">
-          Scroll up to zoom in, down to zoom out · Hold and drag to rotate 360° · Click a strand to open a film · Touch the nucleus
+          <span className="hint-mouse">Scroll up to zoom in, down to zoom out · Hold and drag to rotate 360° · Click a strand to open a film · Touch the nucleus</span>
+          <span className="hint-touch">Pinch or use + / − to zoom · Drag to rotate 360° · Tap a strand to open a film</span>
         </p>
+
+        <div className="zoom" role="group" aria-label="Zoom">
+          <button onClick={() => (fx.zoomBy *= 0.75)} aria-label="Zoom in">+</button>
+          <button onClick={() => (fx.zoomBy *= 1.33)} aria-label="Zoom out">−</button>
+        </div>
 
         <div className="actions">
           {running ? <button onClick={skipIntro}>Skip intro</button> : <button onClick={replayIntro}>Replay intro</button>}

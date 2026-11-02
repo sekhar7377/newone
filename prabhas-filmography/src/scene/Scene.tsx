@@ -14,7 +14,8 @@ import { pointsGeometry, ribbonGeometry, StrandSim } from './sim';
 import { pointsMaterial, ribbonMaterial } from './shaders';
 
 export const QUALITY = {
-  low: { hairs: 8, segments: 64, dpr: [1, 1.25] as [number, number] },
+  // phones: render at up to 2× so strands stay crisp on high-density screens
+  low: { hairs: 10, segments: 80, dpr: [1, 2] as [number, number] },
   medium: { hairs: 16, segments: 96, dpr: [1, 1.6] as [number, number] },
 };
 export type Quality = keyof typeof QUALITY;
@@ -51,7 +52,12 @@ function Strands({ quality }: { quality: Quality }) {
     if (!root) return;
     const l = new Labels(root, SPECS);
     labels.current = l;
+    const remeasure = () => l.measure();
+    remeasure();
+    document.fonts?.ready.then(remeasure);
+    window.addEventListener('resize', remeasure);
     return () => {
+      window.removeEventListener('resize', remeasure);
       l.dispose();
       labels.current = null;
     };
@@ -282,7 +288,8 @@ function Dust({ count = 1200 }) {
 }
 
 const DEFAULT_POS = new THREE.Vector3(7.6, 4, 9.8);
-const homePosition = (aspect: number) => DEFAULT_POS.clone().multiplyScalar(aspect < 1 ? (1 / aspect) ** 0.95 : 1);
+// portrait screens pull back a little so strands fit the width, but not so far that everything turns tiny
+const homePosition = (aspect: number) => DEFAULT_POS.clone().multiplyScalar(aspect < 1 ? (1 / aspect) ** 0.55 : 1);
 export const MIN_DIST = 2.4;
 export const MAX_DIST = 24;
 
@@ -345,6 +352,8 @@ function CameraRig() {
     };
     const down = (e: PointerEvent) => {
       if (e.pointerType !== 'touch') return;
+      // a new gesture starts with its primary finger: drop anything left from the last one
+      if (e.isPrimary) touches.clear();
       touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
       if (touches.size === 2) (startGap = gap()), (startDist = zoomTo.current ?? dist());
     };
@@ -415,6 +424,13 @@ function CameraRig() {
     if (fx.resetCameraAt !== lastReset.current) {
       lastReset.current = fx.resetCameraAt;
       anim.current = { from: camera.position.clone(), fromT: controls.target.clone(), to: homePosition(size.width / size.height), toT: new THREE.Vector3(), t: 0 };
+    }
+    // on-screen zoom buttons
+    if (fx.zoomBy !== 1) {
+      const d = camera.position.distanceTo(controls.target);
+      zoomTo.current = THREE.MathUtils.clamp((zoomTo.current ?? d) * fx.zoomBy, MIN_DIST, MAX_DIST);
+      anim.current = null;
+      fx.zoomBy = 1;
     }
     const a = anim.current;
     if (a) {

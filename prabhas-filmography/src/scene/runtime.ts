@@ -67,5 +67,6 @@ if (reducedMotion) skipIntro();
 export const fx = {
   rippleAt: -100, // realTime when nucleus was touched
   resetCameraAt: 0, // bump to request a camera reset
+  zoomBy: 1, // multiply camera distance on the next frame (zoom buttons)
   hoverIndex: -1,
 };

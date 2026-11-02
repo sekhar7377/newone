@@ -12,6 +12,10 @@ interface Item {
   side: number;
   opacity: number;
   cls: string;
+  hasStatus: boolean;
+  /** Measured label size in css px (0 until measured). */
+  w: number;
+  h: number;
 }
 
 /**
@@ -68,7 +72,17 @@ export class Labels {
       el.style.opacity = '0';
       el.style.visibility = 'hidden';
       root.appendChild(el);
-      this.items.push({ el, spec, side: 0, opacity: -1, cls: '' });
+      this.items.push({ el, spec, side: 0, opacity: -1, cls: '', hasStatus: token !== 'Released', w: 0, h: 0 });
+    }
+  }
+
+  /** Measure real label sizes (hidden labels still lay out). */
+  measure() {
+    for (const it of this.items) {
+      const box = it.el.lastElementChild as HTMLElement | null;
+      if (!box) continue;
+      it.w = box.offsetWidth + (it.spec.film.look ? 26 : 8);
+      it.h = box.offsetHeight + 2;
     }
   }
 
@@ -85,6 +99,9 @@ export class Labels {
     const camToTarget = camera.position.distanceTo(target);
     centre.set(0, 0, 0).project(camera);
     const cx = (centre.x * 0.5 + 0.5) * w;
+    const mobile = w <= 700;
+    // pass 1: where each label wants to be and how visible it is
+    const cand: { it: Item; x: number; y: number; o: number; pr: number; side: number; isSel: boolean; isHov: boolean }[] = [];
     for (const it of this.items) {
       const i = it.spec.index;
       sim.point(i, CP - 1, tmp);
@@ -99,32 +116,61 @@ export class Labels {
       const isHov = i === hover;
       let o = tmp.z < 1 ? arrived * (isSel || isHov ? 1 : depth * bright) * vis * vis : 0;
       if (selected >= 0 && !isSel) o *= 0.55;
+      const x = (tmp.x * 0.5 + 0.5) * w;
+      const y = (-tmp.y * 0.5 + 0.5) * h;
+      let side = x >= cx ? 1 : -1;
+      const edge = mobile ? 130 : 200;
+      if (side > 0 && x > w - edge) side = -1;
+      else if (side < 0 && x < edge) side = 1;
+      const pr = (isSel ? 100 : 0) + (isHov ? 50 : 0) + (it.spec.film.look ? 0.3 : 0) + o * depth;
+      cand.push({ it, x, y, o, pr, side, isSel, isHov });
+    }
+
+    // pass 2: declutter. Most important labels claim space first; a label that
+    // would overlap one already placed fades out until the view changes.
+    cand.sort((a, b) => b.pr - a.pr);
+    const placed: [number, number, number, number][] = [];
+    // keep labels clear of the floating zoom buttons on phones
+    if (mobile) placed.push([w - 64, h * 0.42 - 6, w, h * 0.42 + 106]);
+    const charW = mobile ? 6.4 : 7.4;
+    const lineH = mobile ? 12 : 13;
+    for (const c of cand) {
+      const { it } = c;
+      const i = it.spec.index;
+      const f = it.spec.film;
+      const lines = mobile ? 1 : 1 + (f.director ? 1 : 0) + (it.hasStatus ? 1 : 0);
+      const lw = it.w || (f.title.length + 6) * charW + (f.look ? 26 : 8);
+      const lh = it.h || lines * lineH + 4;
+      // flip to the other side if the label would run off screen; hide it if neither side fits
+      const fits = (side: number) => (side > 0 ? c.x >= 4 && c.x + lw <= w - 4 : c.x - lw >= 4 && c.x <= w - 4);
+      if (!fits(c.side) && fits(-c.side)) c.side = -c.side;
+      const x0 = c.side > 0 ? c.x : c.x - lw;
+      const rect: [number, number, number, number] = [x0, c.y - lh / 2, x0 + lw, c.y + lh / 2];
+      let o = c.o;
+      if (!c.isSel && !c.isHov && (!fits(c.side) || rect[1] < 0 || rect[3] > h)) o = 0;
+      if (o > 0.02 && !c.isSel && !c.isHov) {
+        const hit = placed.some((r) => rect[0] < r[2] && rect[2] > r[0] && rect[1] < r[3] && rect[3] > r[1]);
+        if (hit) o = 0;
+      }
+      if (o > 0.02) placed.push(rect);
       o = Math.round(o * 50) / 50;
       if (o !== it.opacity) {
         it.el.style.opacity = String(o);
         it.el.style.visibility = o > 0.02 ? 'visible' : 'hidden';
         it.opacity = o;
       }
-      const cls = `tlabel${it.spec.film.look ? ' has-look' : ''}${isSel ? ' sel' : ''}${isHov ? ' hov' : ''}`;
-      if (o <= 0.02) {
-        this.screen[i * 2] = NaN;
-        continue;
-      }
-      const x = (tmp.x * 0.5 + 0.5) * w;
-      const y = (-tmp.y * 0.5 + 0.5) * h;
-      this.screen[i * 2] = x;
-      this.screen[i * 2 + 1] = y;
-      let side = x >= cx ? 1 : -1;
-      // keep labels on screen near the edges
-      if (side > 0 && x > w - 200) side = -1;
-      else if (side < 0 && x < 200) side = 1;
-      if (side !== it.side || cls !== it.cls) {
-        it.el.className = cls + (side < 0 ? ' left' : '');
-        it.side = side;
+      // picking still works on strands whose label is hidden
+      this.screen[i * 2] = c.o > 0.02 ? c.x : NaN;
+      this.screen[i * 2 + 1] = c.y;
+      if (o <= 0.02) continue;
+      const cls = `tlabel${f.look ? ' has-look' : ''}${c.isSel ? ' sel' : ''}${c.isHov ? ' hov' : ''}`;
+      if (c.side !== it.side || cls !== it.cls) {
+        it.el.className = cls + (c.side < 0 ? ' left' : '');
+        it.side = c.side;
         it.cls = cls;
       }
-      it.el.style.transform = `translate3d(${x.toFixed(1)}px, ${y.toFixed(1)}px, 0)`;
-      it.el.style.zIndex = isSel ? '3' : isHov ? '2' : '1';
+      it.el.style.transform = `translate3d(${c.x.toFixed(1)}px, ${c.y.toFixed(1)}px, 0)`;
+      it.el.style.zIndex = c.isSel ? '3' : c.isHov ? '2' : '1';
     }
   }
 
