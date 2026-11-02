@@ -74,7 +74,11 @@ function set(patch: Partial<AppState>, history: 'push' | 'replace' | 'none' = 'n
     const url = toSearch(state);
     const current = window.location.search || window.location.pathname;
     if (url !== current) {
-      window.history[history === 'push' ? 'pushState' : 'replaceState'](null, '', url);
+      try {
+        window.history[history === 'push' ? 'pushState' : 'replaceState'](null, '', url);
+      } catch {
+        // sandboxed frames may refuse URL changes; state still updates in the page
+      }
     }
   }
   emit();
